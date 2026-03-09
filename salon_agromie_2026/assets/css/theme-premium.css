@@ -1,0 +1,102 @@
+:root{
+  --bg-main: #F6F8FC;
+  --bg-secondary: #EEF3F8;
+  --card-bg: rgba(255,255,255,0.74);
+  --card-border: rgba(15,23,42,0.08);
+  --text-main: #182230;
+  --text-muted: #6B7280;
+  --green-premium: #00A86B;
+  --cyan-tech: #00BFEA;
+  --gold-soft: #C9A227;
+  --danger-soft: #E35D6A;
+  --shadow-soft: 0 14px 34px rgba(15,23,42,0.10);
+  --radius-xl: 22px;
+}
+
+body{
+  background:
+    radial-gradient(circle at top left, rgba(0,191,234,0.16), transparent 24%),
+    radial-gradient(circle at top right, rgba(201,162,39,0.12), transparent 22%),
+    radial-gradient(circle at bottom right, rgba(0,168,107,0.12), transparent 22%),
+    linear-gradient(135deg, #f8fbff 0%, #eef3f8 48%, #f7f9fc 100%);
+  min-height: 100vh;
+  color: var(--text-main);
+  font-family: "Segoe UI", "Inter", Arial, sans-serif;
+}
+
+.card-premium{
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  color: var(--text-main);
+}
+
+.btn-premium{
+  border: none;
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-green{
+  background: linear-gradient(135deg, #00A86B, #16C784);
+  color: white;
+}
+
+.btn-cyan{
+  background: linear-gradient(135deg, #00BFEA, #5EDFFF);
+  color: #08202b;
+}
+
+.text-gold{ color: var(--gold-soft) !important; }
+.text-green{ color: var(--green-premium) !important; }
+.text-cyan{ color: var(--cyan-tech) !important; }
+
+.form-control,
+.form-select{
+  background: rgba(255,255,255,0.82) !important;
+  border: 1px solid rgba(15,23,42,0.10) !important;
+  color: var(--text-main) !important;
+  border-radius: 14px !important;
+  padding: 12px 14px !important;
+}
+
+.form-control::placeholder{
+  color: #8A94A6 !important;
+}
+
+.form-control:focus,
+.form-select:focus{
+  background: rgba(255,255,255,0.92) !important;
+  box-shadow: 0 0 0 0.2rem rgba(0,191,234,0.14) !important;
+  border-color: rgba(0,191,234,0.42) !important;
+}
+
+.alert-premium-success{
+  background: rgba(0,168,107,0.10);
+  color: #0c7a53;
+  border: 1px solid rgba(0,168,107,0.18);
+  border-radius: 14px;
+}
+
+.alert-premium-danger{
+  background: rgba(227,93,106,0.10);
+  color: #b03c49;
+  border: 1px solid rgba(227,93,106,0.18);
+  border-radius: 14px;
+}
+
+.section-title{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-title{
+  font-size: 2rem;
+  font-weight: 800;
+}
