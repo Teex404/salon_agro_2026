@@ -38,12 +38,10 @@ Le système repose sur un **token unique associé à chaque étudiant**.
 Chaque activité (stand ou conférence) est validée par un **scan effectué par les contrôleurs**, ce qui évite :
 
 - la fraude
-- les déclarations manuelles
-- les erreurs humaines
 
 ---
 
-# 🛠 Technologies utilisées
+# 🛠 Languages utilisées
 
 Backend
 - PHP
